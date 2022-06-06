@@ -1,13 +1,11 @@
 .container {
   display: flex;
-  border: 1px solid black;
   align-items: center;
   justify-content: center;
-  height: 98vh;
+  height: calc(98vh - 64px);
 }
 
-.login-card {
-  border: 1px solid green;
+.login-card, form {
   flex-direction: column;
   height: 400px;
   width: 400px;
@@ -15,4 +13,8 @@
   align-items: center;
   justify-content: flex-start;
   padding: 8px;
+}
+
+img {
+  padding-bottom: 16px;
 }

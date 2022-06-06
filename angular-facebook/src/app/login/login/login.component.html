@@ -1,6 +1,20 @@
+<mat-toolbar color="primary"></mat-toolbar>
 <div class="container">
   <div class="login-card">
     <img src="http://placehold.jp/150x150.png" />
-    <input placeholder="hello" />
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" type="text">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput formControlName="password" type="password">
+      </mat-form-field>
+  
+      <button mat-raised-button type="submit" [disabled]="!loginForm.valid" color="primary">Login</button>
+    </form>
   </div>
 </div>

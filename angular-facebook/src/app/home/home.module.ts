@@ -7,6 +7,7 @@ import { FeedItemComponent } from './feed-item/feed-item.component';
 import { StoryListComponent } from './story-list/story-list.component';
 import { StoryComponent } from './story/story.component';
 import { UserFeedComponent } from './user-feed/user-feed.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { UserFeedComponent } from './user-feed/user-feed.component';
     FeedItemComponent,
     StoryListComponent,
     StoryComponent,
-    ContactsComponent
+    ContactsComponent,
+    HomeComponent
   ],
   imports: [
     CommonModule,
