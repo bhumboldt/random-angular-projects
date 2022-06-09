@@ -1,4 +1,37 @@
 .contacts-container {
   position: sticky;
   flex: 1;
+  min-width: 280px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  @media screen and (max-width: 360px) {
+    display: none;
+  }
+}
+
+.contact-link {
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-link:hover {
+  background-color: #ECF3FF;
+}
+
+.contact-name {
+  padding-left: 8px;
+}
+
+.profile-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
