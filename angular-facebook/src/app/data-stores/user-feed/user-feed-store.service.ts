@@ -15,7 +15,7 @@ export class UserFeedStoreService {
   ) { }
 
   initFeedItems(userId: string) {
-    this.userFeedBackendService.getUserFeed(userId).subscribe(x => this._feedItems.next(x.feed_items), err => console.error(err));
+    this.userFeedBackendService.getUserFeedItems(userId).subscribe(x => this._feedItems.next(x.feed_items), err => console.error(err));
   }
 
   getFeedItems(): Observable<Array<any>> {

@@ -1,3 +1,5 @@
 <div class="user-feed-container">
-  
+  <div *ngFor="let i of feedItems | async">
+    <app-feed-item [feedItem]="i"></app-feed-item>
+  </div>
 </div>

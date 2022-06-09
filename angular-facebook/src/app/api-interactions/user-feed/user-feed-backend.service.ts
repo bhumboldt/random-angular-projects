@@ -11,18 +11,73 @@ export class UserFeedBackendService {
     private http: HttpBaseService
   ) { }
 
-  getUserFeed(userId: string): Observable<any> {
+  getUserFeedItems(userId: string): Observable<any> {
     return of({
       feed_items: [
         {
           id: 'abc',
-          image: '',
-          description: '',
+          image: 'http://placehold.jp/400x400.png',
+          description: 'Hey this is a description for an activity',
           time_posted_at: new Date(),
           poster: {
-            first_name: '',
-            last_name: '',
-            profile_photo: ''
+            first_name: 'Brandon',
+            last_name: 'Humboldt',
+            profile_photo: 'http://placehold.jp/40x40.png'
+          }
+        },
+        {
+          id: 'abc',
+          image: 'http://placehold.jp/400x400.png',
+          description: 'Hey this is a description for an activity',
+          time_posted_at: new Date(),
+          poster: {
+            first_name: 'Brandon',
+            last_name: 'Humboldt',
+            profile_photo: 'http://placehold.jp/40x40.png'
+          }
+        },
+        {
+          id: 'abc',
+          image: 'http://placehold.jp/400x400.png',
+          description: 'Hey this is a description for an activity',
+          time_posted_at: new Date(),
+          poster: {
+            first_name: 'Brandon',
+            last_name: 'Humboldt',
+            profile_photo: 'http://placehold.jp/40x40.png'
+          }
+        },
+        {
+          id: 'abc',
+          image: 'http://placehold.jp/400x400.png',
+          description: 'Hey this is a description for an activity',
+          time_posted_at: new Date(),
+          poster: {
+            first_name: 'Brandon',
+            last_name: 'Humboldt',
+            profile_photo: 'http://placehold.jp/40x40.png'
+          }
+        },
+        {
+          id: 'abc',
+          image: 'http://placehold.jp/400x400.png',
+          description: 'Hey this is a description for an activity',
+          time_posted_at: new Date(),
+          poster: {
+            first_name: 'Brandon',
+            last_name: 'Humboldt',
+            profile_photo: 'http://placehold.jp/40x40.png'
+          }
+        },
+        {
+          id: 'abc',
+          image: 'http://placehold.jp/400x400.png',
+          description: 'Hey this is a description for an activity',
+          time_posted_at: new Date(),
+          poster: {
+            first_name: 'Brandon',
+            last_name: 'Humboldt',
+            profile_photo: 'http://placehold.jp/40x40.png'
           }
         }
       ]
