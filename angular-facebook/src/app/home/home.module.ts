@@ -1,3 +1,4 @@
+import { SharedModule } from './../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,6 +9,7 @@ import { StoryListComponent } from './story-list/story-list.component';
 import { StoryComponent } from './story/story.component';
 import { UserFeedComponent } from './user-feed/user-feed.component';
 import { HomeComponent } from './home/home.component';
+import { HomeSideComponent } from './home-side/home-side.component';
 
 
 @NgModule({
@@ -17,11 +19,13 @@ import { HomeComponent } from './home/home.component';
     StoryListComponent,
     StoryComponent,
     ContactsComponent,
-    HomeComponent
+    HomeComponent,
+    HomeSideComponent
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ]
 })
 export class HomeModule { }
