@@ -1,6 +1,7 @@
 import { Observable } from 'rxjs';
 import { UserFeedStoreService } from './../../data-stores/user-feed/user-feed-store.service';
 import { Component, OnInit } from '@angular/core';
+import { FeedItem } from '../../models/FeedItem';
 
 @Component({
   selector: 'app-user-feed',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-feed.component.scss']
 })
 export class UserFeedComponent implements OnInit {
-  feedItems: Observable<Array<any>>;
+  feedItems: Observable<Array<FeedItem>>;
 
   constructor(
     private userFeedStore: UserFeedStoreService

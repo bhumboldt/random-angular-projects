@@ -1,5 +1,8 @@
 .home-side-container {
-  position: sticky;
+  align-self: flex-start;
+  position: fixed;
+  top: calc(8px + 7vh);
+  left: 8px;
   min-width: 280px;
   max-width: 360px;
   display: flex;

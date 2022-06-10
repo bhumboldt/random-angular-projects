@@ -1,6 +1,7 @@
 .contacts-container {
-  position: sticky;
-  flex: 1;
+  position: fixed;
+  top: calc(8px + 7vh);
+  right: 24px;
   min-width: 280px;
   max-width: 360px;
   display: flex;

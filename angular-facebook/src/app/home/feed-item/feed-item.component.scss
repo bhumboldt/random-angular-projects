@@ -1,0 +1,23 @@
+.feed-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  border: 1px solid green;
+  margin-bottom: 8px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.profile-photo-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.feed-item-user-info {
+  padding: 16px;
+}

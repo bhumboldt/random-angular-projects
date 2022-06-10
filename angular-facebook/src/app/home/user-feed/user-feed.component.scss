@@ -1,9 +1,8 @@
 .user-feed-container {
-  border: 1px solid green;
   height: 100%;
   flex: 2;
   max-width: 600px;
-  min-width: 400px;
+  min-width: 600px;
   @media screen and (max-width: 360px) {
     min-width: 300px;
     max-width: 300px;

@@ -1,8 +1,11 @@
 .container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 100%;
   align-items: stretch;
   justify-content: space-between;
   padding: 8px;
+  margin-top: calc(8px + 7vh);
+  z-index: 0;
+  position: relative;
 }
